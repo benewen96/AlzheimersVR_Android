@@ -17,23 +17,26 @@
         android:layout_height="250dip"
         android:background="#000000" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play"
-        android:id="@+id/play_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/video_view"
-        android:onClick="playVideo" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="To start a VR experience, please select your choice from the menu below."
+        android:id="@+id/welcome"
+        android:layout_below="@+id/video_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40px"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px" />
 
-    <EditText
-        android:layout_width="600px"
-        android:layout_height="10px"
-        android:id="@+id/url_field"
-        android:layout_toStartOf="@+id/play_btn"
-        android:text="http://mobile.360heros.com/producers/4630608605686575/5579686187673361/video/video_7776b10db31f349ede5d253b7744e110.mp4"
-        android:maxWidth="600px"
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:id="@+id/videoList"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/video_view" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="18px" />
 
 </RelativeLayout>
